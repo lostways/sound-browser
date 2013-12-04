@@ -1,0 +1,51 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">alowemusicbrowser</h3>
+</div>
+  <div class="row">
+    <div class="col-md-4 tag-list">
+      <ul class="nav nav-pills nav-stacked">
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 tag-list">
+      <ul class="nav nav-pills nav-stacked">
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 tag-list">
+      <ul class="nav nav-pills nav-stacked">
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+        <li><a ng-click="" ng-href="#">House</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 track-thumbnail" ng-repeat="track in tracks">
+      <div class="thumbnail">
+        <img ng-src="{{track.artwork_url || track.user.avatar_url}}" />
+        <div class="caption">
+	  <h3><a ng-href={{track.permalink_url}} target="new">{{track.title}}</a></h3>
+          <p>{{track.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="footer">
+  <p>&copy; A. Lowe</p>
+</div>
