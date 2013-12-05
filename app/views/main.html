@@ -7,36 +7,15 @@
   <h3 class="text-muted">alowemusicbrowser</h3>
 </div>
   <div class="row">
-    <div class="col-md-4 tag-list">
-      <ul class="nav nav-pills nav-stacked">
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 tag-list">
-      <ul class="nav nav-pills nav-stacked">
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 tag-list">
-      <ul class="nav nav-pills nav-stacked">
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
-        <li><a ng-click="" ng-href="#">House</a></li>
+    <div class="col-md-4 tag-list" ng-repeat="taglist in tags.lists">
+      <h3>{{taglist.title}}</h3>
+      <ul class="nav nav-pills nav-stacked" ng-repeat="tag in taglist.list">
+        <li ng-class="{active: activeTags[tag] == true}"><a ng-click="updateTagList(tag)">{{tag | limitTo: 1 | uppercase}}{{tag | limitTo:(-tag.length + 1)}}</a></li>
       </ul>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6 track-thumbnail" ng-repeat="track in tracks">
+    <div class="col-md-6 track-thumbnail" ng-repeat="track in sortedTracks">
       <div class="thumbnail">
         <img ng-src="{{track.artwork_url || track.user.avatar_url}}" />
         <div class="caption">

@@ -12,16 +12,22 @@ body {
 /* tag list */
 
 .tag-list {
-   border-color: #CCCCCC;
+/*   border-color: #CCCCCC;
    border-width: 5px;
    border-top-style: solid;
-   border-left-style: solid;
-   border-bottom-style: solid;
+   border-left-style: solid; 
+   border-bottom-style: solid; */
    margin-bottom: 20px;
-}
-
-.tag-list:last-child {
-  border-right-style: solid;
+   
+   li {
+     margin-bottom: 3px;
+     cursor: pointer;
+     a, a.active {
+      border: 1px solid #CCCCCC; 
+      @include border-right-radius(0px);
+      @include border-left-radius(5px);
+     }
+   }
 }
 
 /* track thumbs */
