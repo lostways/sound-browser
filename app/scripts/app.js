@@ -12,6 +12,10 @@ angular.module('almbApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/track/:id', {
+        templateUrl: 'views/track.html',
+        controller: 'TrackCtrl',
+      })
       .otherwise({
         redirectTo: '/'
       });
