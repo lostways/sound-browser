@@ -1,0 +1,22 @@
+[ { "list" : [ "trance",
+        "dubstep",
+        "experimental",
+        "glitch hop"
+      ],
+    "title" : "Genre"
+  },
+  { "list" : [ "remix",
+        "intrumental",
+        "electronic",
+        "vocal"
+      ],
+    "title" : "Type"
+  },
+  { "list" : [ "epic",
+        "sad",
+        "uplifting",
+        "thoughtful"
+      ],
+    "title" : "Emotion"
+  }
+]

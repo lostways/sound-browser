@@ -9,25 +9,11 @@ angular.module('almbApp')
       'client_id': $almbConfig.scClientId
     });
         
-    /***Tag Lists***/
-    var tags = {};
-    tags.lists = [
-      {
-        'title': 'Genre',
-        'list': ['trance','dubstep','experimental','glitch hop']
-      },
-      {
-        'title': 'Type',
-        'list': ['remix','intrumental','electronic','vocal']
-      },
-      {
-        'title': 'Emotion',
-        'list': ['epic','sad','uplifting','thoughtful']
-      }
-    ];
-
+    /** Tag List **/
+    var tagListResource = $resource('data/tag-list.json',{});
+    
     $scope.config = $almbConfig;
-    $scope.tags = tags;
+    $scope.tags = tagListResource.query();
     $scope.tracks = scResource.query();
     $scope.sortedTracks = $scope.tracks;
  
