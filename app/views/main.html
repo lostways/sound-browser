@@ -8,12 +8,14 @@
   </div>
   <div class="row">
     <div class="col-md-6 track-thumbnail" ng-repeat="track in sortedTracks">
-      <div class="thumbnail">
-        <img ng-src="{{track.artwork_url || track.user.avatar_url}}" />
-        <div class="caption">
-	  <h3><a ng-href="#/track/{{track.id}}" target="">{{track.title}}</a></h3>
-          <p>{{track.description}}</p>
-        </div>
-      </div>
+      <a ng-href="#/track/{{track.id}}" class="track-link">
+       <div class="thumbnail">
+         <img ng-src="{{track.artwork_url || track.user.avatar_url}}" />
+         <div class="caption">
+	         <h3>{{track.title}}</h3>
+           <p>{{track.description}}</p>
+         </div>
+       </div>
+      </a>
     </div>
   </div>

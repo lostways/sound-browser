@@ -9,7 +9,8 @@ angular.module('almbApp')
     $scope.track = trackResource.get(function(data) {
       var embedResource = $resource($almbConfig.scApiUrl + '/oembed', {
         'url': data.permalink_url,
-        'format': 'json'
+        'format': 'json',
+        'iframe': false
       });
       $scope.embed = embedResource.get(function () {
         $scope.embedHtml = $sce.trustAsHtml($scope.embed.html);

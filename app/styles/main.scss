@@ -40,10 +40,26 @@ body {
   }
 }
 
+/* track link */
+
+.track-link {
+  &:hover, &:focus {
+    text-decoration: none
+  }
+}
 /* track embed */
 
 .track-embed {
-  margin-bottom: 30px;
+}
+
+/* Back Link */
+
+.track-back-link {
+  font-size: 24px;
+  margin: 10px 0px;
+  &:hover, &:focus {
+    text-decoration: none
+  }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
