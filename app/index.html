@@ -28,11 +28,13 @@
    <div class="header">
      <h3 class="text-muted">A. Lowe Music Browser</h3>
    </div>
-    <!-- Add your site or application content here -->
-    <div class="" ng-view=""></div>
     
-    <div class="footer">
-      <p>&copy; A. Lowe</p>
+    <div class="view-container">
+      <!-- Add your site or application content here -->
+      <div class="angular-view-slide" ng-view=""></div>
+     <!-- <div class="footer">
+        <p>&copy; A. Lowe</p>
+      </div> -->
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -68,6 +70,7 @@
         <script src="bower_components/angular-cookies/angular-cookies.js"></script>
         <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->

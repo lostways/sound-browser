@@ -11,7 +11,7 @@ angular.module('almbApp')
         
     /** Tag List **/
     var tagListResource = $resource('data/tag-list.json',{});
-    
+ 
     $scope.config = $almbConfig;
     $scope.tags = tagListResource.query();
     $scope.tracks = scResource.query();
@@ -27,7 +27,6 @@ angular.module('almbApp')
       }
       //update track list
 /*jshint camelcase: false */
-      //tagFilter($scope.sortedTracks);
       var sortedTracksOutput = [];
       $scope.sortedTracks = [];
       for (var i in $scope.tracks) {

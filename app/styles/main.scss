@@ -9,6 +9,42 @@ body {
     padding-bottom: 20px;
 }
 
+/* angular view animation */
+
+.view-container {
+  position: relative;
+}
+
+.angular-view-slide {
+
+}
+
+.angular-view-slide.ng-leave,
+.angular-view-slide.ng-enter {
+  position:absolute;
+  @include transition(all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s);
+  //@include transition-delay(0.5s);
+  width: 698px;
+}
+
+.angular-view-slide.ng-leave {
+  left: 0px;
+  opacity: 1;
+}
+.angular-view-slide.ng-leave.ng-leave-active {
+  left: 900px;
+  opacity: 0;
+}
+
+.angular-view-slide.ng-enter {
+  left: -900px;
+  opacity: 0;
+}
+.angular-view-slide.ng-enter.ng-enter-active {
+  left: 0px;
+  opacity: 1;
+}
+
 /* tag list */
 
 .tag-list {
@@ -50,6 +86,8 @@ body {
 /* track embed */
 
 .track-embed {
+  height: 166px;
+  width: 698px;
 }
 
 /* Back Link */
@@ -57,6 +95,7 @@ body {
 .track-back-link {
   font-size: 24px;
   margin: 10px 0px;
+  width: 213px;
   &:hover, &:focus {
     text-decoration: none
   }
