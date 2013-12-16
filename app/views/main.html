@@ -7,6 +7,7 @@
     </div>
   </div>
   <div class="row">
+    <div class="col-md-1 col-md-offset-5" ng-hide="tracks.$resolved"><img src="images/ajax-loader.gif" /></div>
     <div class="col-md-6 track-thumbnail" ng-repeat="track in sortedTracks">
       <a ng-href="#/track/{{track.id}}" class="track-link">
        <div class="thumbnail">
