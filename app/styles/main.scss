@@ -9,6 +9,13 @@ body {
     padding-bottom: 20px;
 }
 
+/* Header */
+
+.header {
+  margin-bottom: 10px;
+}
+
+
 /* angular view animation */
 
 .view-container {
@@ -25,6 +32,9 @@ body {
   @include transition(all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s);
   //@include transition-delay(0.5s);
   width: 698px;
+  +.footer {
+    display: none;
+  }
 }
 
 .angular-view-slide.ng-leave {
@@ -33,7 +43,6 @@ body {
 }
 .angular-view-slide.ng-leave.ng-leave-active {
   left: 900px;
-  opacity: 0;
 }
 
 .angular-view-slide.ng-enter {
@@ -104,7 +113,8 @@ body {
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
-.footer {
+.footer,
+.subtitle {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -149,6 +159,9 @@ body {
     }
     /* Space out the masthead */
     .header {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
+    }
+    .subtitle {
+      margin-bottom: 30px;
     }
 }
