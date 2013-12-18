@@ -29,7 +29,7 @@ angular.module('almbApp')
 /*jshint camelcase: false */
       var sortedTracksOutput = [];
       $scope.sortedTracks = [];
-      for (var i in $scope.tracks) {
+      for (var i=0; i < $scope.tracks.length; i++) {
         var tagsToSearch = $scope.tracks[i].tag_list + ' ' + $scope.tracks[i].genre;
         //loop through active tags
         var trackMatchedAllTags = true;
