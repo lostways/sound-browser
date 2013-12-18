@@ -2,7 +2,7 @@
     <div class="col-md-4 tag-list" ng-repeat="taglist in tags">
       <h3>{{taglist.title}}</h3>
       <ul class="nav nav-pills nav-stacked" ng-repeat="tag in taglist.list">
-        <li ng-class="{active: activeTags[tag] == true}"><a ng-click="updateTagList(tag)">{{tag | limitTo: 1 | uppercase}}{{tag | limitTo:(-tag.length + 1)}}</a></li>
+        <li ng-class="{active: activeTags[tag] == true}"><a ng-click="updateTagList(tag)">{{tag | capitalize}}</a></li>
       </ul>
     </div>
   </div>
