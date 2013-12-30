@@ -1,4 +1,4 @@
-Sound Cloud Sound  Browser
+SoundCloud Sound  Browser
 ===================
 
 How to run code
