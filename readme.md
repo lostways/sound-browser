@@ -1,7 +1,7 @@
 A Lowe Music Browser
 ===================
 
-how to run code
+How to run code
 ----------------
 
 1. Install node modules
