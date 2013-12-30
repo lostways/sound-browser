@@ -1,4 +1,4 @@
-A Lowe Music Browser
+Sound Cloud Sound  Browser
 ===================
 
 How to run code
@@ -12,6 +12,10 @@ How to run code
 
     `bower install`
 
-3. Start server
+3. Configure server
+
+    edit app/scripts/config.js and enter your soundcloud client id and your soundcloud user id
+
+4. Start server
 
     `grunt serve`
