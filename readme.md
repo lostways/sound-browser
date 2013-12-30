@@ -1,16 +1,17 @@
 A Lowe Music Browser
-------------------------
+===================
 
-#how to run code
+how to run code
+----------------
 
 1. Install node modules
 
-`npm install`
+    `npm install`
 
 2. Install bower pakages
 
-`bower install`
+    `bower install`
 
 3. Start server
 
-`grunt serve`
+    `grunt serve`
